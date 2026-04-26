@@ -27,7 +27,7 @@ def predict():
         # 4. Send the result back to Wix
         return jsonify({
             'status': 'success',
-            'prediction': int(prediction[0])
+            'prediction': str(prediction[0])
         })
 
     except Exception as e:
